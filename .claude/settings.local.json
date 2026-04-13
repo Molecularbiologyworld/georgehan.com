@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(pandoc --track-changes=all blog/drafts/blog_1.docx -o blog/drafts/blog_1.md)",
+      "Bash(python -c \":*)",
+      "Bash(copy \"C:\\\\Users\\\\molec\\\\OneDrive\\\\george_website\\\\blog\\\\drafts\\\\image1.jpeg\" \"C:\\\\Users\\\\molec\\\\OneDrive\\\\george_website\\\\blog\\\\img\\\\geroscience-fig1.jpeg\")",
+      "Bash(python scripts/office/unpack.py blog/drafts/blog_1.docx blog_1_unpacked/)",
+      "Bash(ls \"C:\\\\Users\\\\molec\\\\OneDrive\\\\george_website\\\\blog\"\" 2>/dev/null && ls \"C:UsersmolecOneDrivegeorge_websiteblogimg\"\")",
+      "Bash(dir \"C:\\\\Users\\\\molec\\\\OneDrive\\\\george_website\\\\blog\")",
+      "Bash(dir \"C:\\\\Users\\\\molec\\\\OneDrive\\\\george_website\\\\blog\\\\img\")"
+    ]
+  }
+}

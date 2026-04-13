@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — George Han</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="projects.html" data-path="~/projects">
+
+  <div class="window">
+
+    <header>
+      <a class="site-logo" href="index.html"><span class="lb">&lt;</span>George Han<span class="lb">/&gt;</span></a>
+      <nav id="nav"></nav>
+    </header>
+
+    <main>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/projects</span><span class="p-sym">$</span>
+        <span class="p-cmd">git log --oneline --all</span>
+      </div>
+
+      <div class="output">
+        <p class="dimmed cmt">side projects, tools, and experiments — mostly built to scratch my own itches</p>
+      </div>
+
+      <!-- Featured -->
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/projects</span><span class="p-sym">$</span>
+        <span class="p-cmd">ls ./featured/</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">Featured</div>
+
+        <div class="card">
+          <div class="card-title">[Project Name]</div>
+          <div class="card-sub">Short one-line description of what it does</div>
+          <p>
+            Longer description: what problem it solves, how it works, what you learned building it.
+          </p>
+          <div class="tags" style="margin: 10px 0 10px;">
+            <span class="tag tg">Python</span>
+            <span class="tag tb">scikit-learn</span>
+            <span class="tag tm">pandas</span>
+          </div>
+          <a href="#" class="dimmed" style="font-size:13px; margin-right: 14px;">⟶ GitHub</a>
+          <a href="#" class="dimmed" style="font-size:13px;">⟶ Demo</a>
+        </div>
+
+        <div class="card blue">
+          <div class="card-title">[Another Project]</div>
+          <div class="card-sub">What it is in one line</div>
+          <p>
+            Description. What you built, why, and what's interesting about it.
+          </p>
+          <div class="tags" style="margin: 10px 0 10px;">
+            <span class="tag tt">R</span>
+            <span class="tag ty">Bioconductor</span>
+            <span class="tag tp">ggplot2</span>
+          </div>
+          <a href="#" class="dimmed" style="font-size:13px;">⟶ GitHub</a>
+        </div>
+
+        <div class="card mauve">
+          <div class="card-title">[Third Project]</div>
+          <div class="card-sub">One-liner</div>
+          <p>Description of what this project does and why you built it.</p>
+          <div class="tags" style="margin: 10px 0 10px;">
+            <span class="tag ts">Bash</span>
+            <span class="tag tg">Python</span>
+          </div>
+          <a href="#" class="dimmed" style="font-size:13px;">⟶ GitHub</a>
+        </div>
+      </div>
+
+      <!-- Other / archive -->
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/projects</span><span class="p-sym">$</span>
+        <span class="p-cmd">ls ./archive/ --color</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">Other &amp; Experiments</div>
+        <p class="dimmed cmt">smaller things, works in progress, abandoned experiments</p>
+        <br />
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 10px;">
+
+          <div class="card teal" style="border-left-width:2px; padding: 12px 14px;">
+            <div class="card-title" style="font-size:13px;">[Mini Project A]</div>
+            <p style="font-size:12px;">Short description.</p>
+            <div class="tags" style="margin-top:6px;"><span class="tag tg">Python</span></div>
+          </div>
+
+          <div class="card yellow" style="border-left-width:2px; padding: 12px 14px;">
+            <div class="card-title" style="font-size:13px;">[Mini Project B]</div>
+            <p style="font-size:12px;">Short description.</p>
+            <div class="tags" style="margin-top:6px;"><span class="tag tb">R</span></div>
+          </div>
+
+          <div class="card peach" style="border-left-width:2px; padding: 12px 14px;">
+            <div class="card-title" style="font-size:13px;">[Mini Project C]</div>
+            <p style="font-size:12px;">Short description.</p>
+            <div class="tags" style="margin-top:6px;"><span class="tag ts">Bash</span></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/projects</span><span class="p-sym">$</span>
+        <span class="cursor"></span>
+      </div>
+
+    </main>
+
+    <footer>
+      <span>George Han · Cambridge</span>
+      <span id="clock"></span>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

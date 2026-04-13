@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — George Han</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="blog.html" data-path="~/blog">
+
+  <div class="window">
+
+    <header>
+      <a class="site-logo" href="index.html"><span class="lb">&lt;</span>George Han<span class="lb">/&gt;</span></a>
+      <nav id="nav"></nav>
+    </header>
+
+    <main>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/blog</span><span class="p-sym">$</span>
+        <span class="p-cmd">ls -lt ./posts/</span>
+      </div>
+
+      <div class="output">
+        <p class="dimmed cmt">writing on science, data, AI, and whatever else I can't stop thinking about</p>
+        <br />
+
+        <div class="sh">Posts</div>
+
+        <ul class="post-list">
+
+          <li class="post-item">
+            <span class="post-date">2026-04-13</span>
+            <div class="post-body">
+              <a class="post-title" href="blog/geroscience-sanctions.html">Three New Realities in the Interface Between Geroscience and Nonmonetary Sanctions</a>
+              <div class="post-excerpt">How advances in healthspan, epigenetic ageing clocks, and cellular reprogramming challenge the justice system and demand a rethinking of non-monetary punishment.</div>
+              <div class="tags" style="margin-top: 6px;">
+                <span class="tag tm">longevity</span>
+                <span class="tag tb">geroscience</span>
+                <span class="tag tg">bioethics</span>
+                <span class="tag ty">law &amp; policy</span>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/blog</span><span class="p-sym">$</span>
+        <span class="p-cmd">git tag --list</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">Topics</div>
+        <div class="tags">
+          <span class="tag tg">data science</span>
+          <span class="tag tb">machine learning</span>
+          <span class="tag tm">biology</span>
+          <span class="tag tt">bioinformatics</span>
+          <span class="tag ty">reading notes</span>
+          <span class="tag tp">opinion</span>
+          <span class="tag ts">tutorials</span>
+        </div>
+      </div>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/blog</span><span class="p-sym">$</span>
+        <span class="cursor"></span>
+      </div>
+
+    </main>
+
+    <footer>
+      <span>George Han · Cambridge</span>
+      <span id="clock"></span>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

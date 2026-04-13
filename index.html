@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>George Han</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="index.html" data-path="~">
+
+  <div class="window">
+
+    <header>
+      <a class="site-logo" href="index.html"><span class="lb">&lt;</span>George Han<span class="lb">/&gt;</span></a>
+      <nav id="nav"></nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+
+      <!-- Boot sequence -->
+      <div id="boot"></div>
+
+      <!-- Home content (revealed after boot) -->
+      <div id="home-content" style="display:none">
+
+        <div class="prompt">
+          <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~</span><span class="p-sym">$</span>
+          <span class="p-cmd">whoami</span>
+        </div>
+
+        <div class="output">
+          <div class="hero-name">George Han</div>
+          <div class="dimmed" style="font-size:12px; margin-bottom: 8px;">
+            legal: <span class="mauve">Zhuang Zhuang Han</span>
+          </div>
+          <div class="tagline">
+            <span class="green">PhD Candidate · University of Cambridge</span>
+            <span class="sep">·</span>
+            <span class="blue">Cambridge Trust Scholar</span>
+          </div>
+          <p class="dimmed cmt">curiosity-driven · perpetually caffeinated · always reading</p>
+          <div class="profile-section" style="margin-top: 24px;">
+            <img class="profile-photo" src="img/home_2.jpeg" alt="George Han" />
+            <div class="profile-details">
+              <div class="profile-name">George Han</div>
+              <div class="profile-legal">Zhuang Zhuang Han</div>
+              <div class="profile-title">PhD Candidate · Medical Sciences<br>University of Cambridge</div>
+              <div class="profile-inst">Cambridge Trust Scholar · Wolfson College</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prompt">
+          <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~</span><span class="p-sym">$</span>
+          <span class="p-cmd">ls -la ./portfolio</span>
+        </div>
+
+        <div class="output">
+          <p class="dimmed cmt">available directories</p>
+          <div class="cmd-menu">
+            <a class="cmd-item" href="about.html">
+              <span class="cmd-sym">drwxr-xr-x</span>
+              <span class="cmd-name">./about</span>
+              <span class="cmd-desc">background, education &amp; CV</span>
+            </a>
+            <a class="cmd-item" href="research.html">
+              <span class="cmd-sym">drwxr-xr-x</span>
+              <span class="cmd-name">./research</span>
+              <span class="cmd-desc">papers &amp; ongoing work</span>
+            </a>
+            <a class="cmd-item" href="blog.html">
+              <span class="cmd-sym">drwxr-xr-x</span>
+              <span class="cmd-name">./blog</span>
+              <span class="cmd-desc">articles &amp; writing</span>
+            </a>
+            <a class="cmd-item" href="projects.html">
+              <span class="cmd-sym">drwxr-xr-x</span>
+              <span class="cmd-name">./projects</span>
+              <span class="cmd-desc">code &amp; side projects</span>
+            </a>
+            <a class="cmd-item" href="books.html">
+              <span class="cmd-sym">drwxr-xr-x</span>
+              <span class="cmd-name">./books</span>
+              <span class="cmd-desc">reading list</span>
+            </a>
+            <a class="cmd-item" href="contact.html">
+              <span class="cmd-sym">drwxr-xr-x</span>
+              <span class="cmd-name">./contact</span>
+              <span class="cmd-desc">get in touch</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="prompt">
+          <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~</span><span class="p-sym">$</span>
+          <span class="p-cmd">cat README.md</span>
+        </div>
+
+        <div class="output">
+          <p>
+            I'm a biomedical researcher with a deep interest in
+            <span class="blue">data science</span> and <span class="mauve">artificial intelligence</span>.
+            My work sits at the intersection of biology and computation — trying to make sense
+            of messy, high-dimensional biological data.
+          </p>
+          <br />
+          <p class="sub0">
+            When I'm not pipetting or wrangling datasets, you'll find me reading widely,
+            building side projects, or going down Wikipedia rabbit holes at 2 am.
+          </p>
+          <br />
+          <div class="tags">
+            <span class="tag tt">Neuroscience</span>
+            <span class="tag tg">Neurodegeneration</span>
+            <span class="tag tm">Ageing</span>
+            <span class="tag tb">Python</span>
+            <span class="tag tp">Machine Learning</span>
+            <span class="tag ty">Bioinformatics</span>
+          </div>
+        </div>
+
+        <div class="prompt">
+          <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~</span><span class="p-sym">$</span>
+          <span class="cursor"></span>
+        </div>
+
+      </div><!-- /home-content -->
+    </main>
+
+    <footer>
+      <span>George Han · Cambridge</span>
+      <span id="clock"></span>
+    </footer>
+
+  </div><!-- /window -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>

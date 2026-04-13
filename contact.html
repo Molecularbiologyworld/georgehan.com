@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — George Han</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="contact.html" data-path="~/contact">
+
+  <div class="window">
+
+    <header>
+      <a class="site-logo" href="index.html"><span class="lb">&lt;</span>George Han<span class="lb">/&gt;</span></a>
+      <nav id="nav"></nav>
+    </header>
+
+    <main>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/contact</span><span class="p-sym">$</span>
+        <span class="p-cmd">cat contact.md</span>
+      </div>
+
+      <div class="output">
+        <p>
+          I'm happy to hear from anyone — researchers, fellow geeks, potential collaborators,
+          or people who just want to discuss a book or idea.
+          The best way to reach me is by email.
+        </p>
+      </div>
+
+      <!-- Social / direct links -->
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/contact</span><span class="p-sym">$</span>
+        <span class="p-cmd">cat links.txt</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">Find me at</div>
+        <div class="socials">
+          <a class="social-link" href="mailto:george.zhuang.han@gmail.com">
+            <span class="green">✉</span> email
+          </a>
+          <a class="social-link" href="https://github.com/Molecularbiologyworld" target="_blank" rel="noopener">
+            <span class="dimmed">/</span><span class="blue">github</span>
+          </a>
+          <a class="social-link" href="https://scholar.google.com/citations?user=G_x4Wf8AAAAJ&hl=en" target="_blank" rel="noopener">
+            <span class="yellow">google scholar</span>
+          </a>
+          <a class="social-link" href="https://www.youtube.com/@AIxbiology" target="_blank" rel="noopener">
+            <span class="red">▶</span> youtube
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/george-h-07564a107/" target="_blank" rel="noopener">
+            <span class="blue">in</span><span class="dimmed">/</span>linkedin
+          </a>
+        </div>
+      </div>
+
+      <!-- Message form -->
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/contact</span><span class="p-sym">$</span>
+        <span class="p-cmd">./send-message.sh</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">Send a Message</div>
+        <p class="dimmed cmt">fields marked with * are required — this form needs a backend to function (see below)</p>
+        <br />
+
+        <!--
+          To make this form work, connect it to a service like:
+          - Formspree (formspree.io): replace action URL
+          - Netlify Forms: add netlify attribute
+          - EmailJS: use their JS SDK
+          The simplest no-backend option is Formspree — replace YOUR_FORM_ID below.
+        -->
+        <form class="t-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+          <div class="field">
+            <label for="name">name *</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="off" />
+          </div>
+
+          <div class="field">
+            <label for="email">email *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="off" />
+          </div>
+
+          <div class="field">
+            <label for="subject">subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" autocomplete="off" />
+          </div>
+
+          <div class="field">
+            <label for="message">message *</label>
+            <textarea id="message" name="message" placeholder="Say something..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn">⟶ send</button>
+        </form>
+      </div>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/contact</span><span class="p-sym">$</span>
+        <span class="cursor"></span>
+      </div>
+
+    </main>
+
+    <footer>
+      <span>George Han · Cambridge</span>
+      <span id="clock"></span>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

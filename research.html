@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — George Han</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="research.html" data-path="~/research">
+
+  <div class="window">
+
+    <header>
+      <a class="site-logo" href="index.html"><span class="lb">&lt;</span>George Han<span class="lb">/&gt;</span></a>
+      <nav id="nav"></nav>
+    </header>
+
+    <main>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/research</span><span class="p-sym">$</span>
+        <span class="p-cmd">cat interests.md</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">Research Interests</div>
+        <p>
+          My research sits at the intersection of <span class="blue">biomedical science</span>
+          and <span class="mauve">machine learning</span>. I'm particularly interested in how
+          computational methods can extract biological insight from complex, high-dimensional datasets.
+        </p>
+        <br />
+        <div class="tags">
+          <span class="tag tg">Neurodegeneration</span>
+          <span class="tag tb">iPSC Models</span>
+          <span class="tag tm">Longevity &amp; Ageing</span>
+          <span class="tag tt">Protein Design</span>
+          <span class="tag tp">Lipid Biology</span>
+          <span class="tag ty">Tauopathies</span>
+        </div>
+      </div>
+
+      <!-- Publications -->
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/research</span><span class="p-sym">$</span>
+        <span class="p-cmd">find ./papers -name "*.pdf" | sort -r | head -3</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">Recent Publications</div>
+
+        <div class="card">
+          <div class="card-title">Human iPSC Models of Ganglioside Deficiency Reveal a Sialylated Lipid Requirement for Plasma-Membrane Organization and Neuronal Activity</div>
+          <div class="card-sub">
+            Barrow H*, <span class="blue">Han ZZ*</span>, Nicholson AS, Strasser S, Nash DA, Suberu JO, Antrobus R, te Vruchte D, Priestman DA, Graham SC, Platt FM, Deane JE
+            <span class="dimmed" style="margin-left:6px;">* equal first author</span>
+          </div>
+          <div class="card-date">BioRxiv · March 2026 · <a href="https://doi.org/10.64898/2026.03.18.712603" target="_blank" rel="noopener">doi →</a></div>
+          <div class="tags" style="margin-top:10px;">
+            <span class="tag tb">iPSC</span>
+            <span class="tag tg">Ganglioside</span>
+            <span class="tag tm">Neuronal Activity</span>
+          </div>
+        </div>
+
+        <div class="card blue">
+          <div class="card-title">The Ethics Case for Longevity Science</div>
+          <div class="card-sub"><span class="blue">Han ZZ</span>, de Magalhães JP</div>
+          <div class="card-date">Ageing Research Reviews · March 2026 · <a href="https://doi.org/10.1016/j.arr.2026.103054" target="_blank" rel="noopener">doi →</a></div>
+          <div class="tags" style="margin-top:10px;">
+            <span class="tag tm">Longevity</span>
+            <span class="tag ty">Ethics</span>
+          </div>
+        </div>
+
+        <div class="card mauve">
+          <div class="card-title">Expression of Progerin Enhances Disease-Related Endpoints in a Tau Seeding Reporter Cell System</div>
+          <div class="card-sub"><span class="blue">Han ZZ</span>, Kang SG, Gomez-Cardona E, Wohlgemuth S, Shmeit K, Arce LA, Safar JG, Julien O, Westaway D</div>
+          <div class="card-date">GeroScience · July 2025 · <a href="https://doi.org/10.1007/s11357-025-01737-z" target="_blank" rel="noopener">doi →</a></div>
+          <div class="tags" style="margin-top:10px;">
+            <span class="tag tt">Progerin</span>
+            <span class="tag tg">Tauopathy</span>
+            <span class="tag tp">Ageing</span>
+          </div>
+        </div>
+
+        <p style="margin-top:14px; font-size:13px;">
+          <a href="https://scholar.google.com/citations?user=G_x4Wf8AAAAJ&hl=en" target="_blank" rel="noopener">View all publications on Google Scholar →</a>
+        </p>
+      </div>
+
+      <!-- Talks -->
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/research</span><span class="p-sym">$</span>
+        <span class="p-cmd">cat talks.log | tail -3</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">Talks &amp; Posters</div>
+
+        <div class="card">
+          <div class="card-title">Unravelling the Effects of GM3 Synthase Deficiency in Human iPSC-Derived Neurons</div>
+          <div class="card-sub">8th Cambridge Neuroscience Symposium</div>
+          <div class="card-date">Cambridge, UK · September 2025</div>
+        </div>
+
+        <div class="card blue">
+          <div class="card-title">Expression of Progerin Enhances Disease-Related Endpoints in a Tau Seeding Reporter Cell System</div>
+          <div class="card-sub">12th Aging Research &amp; Drug Discovery Meeting</div>
+          <div class="card-date">Copenhagen, Denmark · August 2025</div>
+        </div>
+
+        <div class="card mauve">
+          <div class="card-title">Unravelling the Effects of GM3 Synthase Deficiency in Human iPSC-Derived Neurons</div>
+          <div class="card-sub">Wolfson Research Event 2025</div>
+          <div class="card-date">Wolfson College, Cambridge · May 2025</div>
+        </div>
+      </div>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/research</span><span class="p-sym">$</span>
+        <span class="cursor"></span>
+      </div>
+
+    </main>
+
+    <footer>
+      <span>George Han · Cambridge</span>
+      <span id="clock"></span>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

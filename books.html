@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books — George Han</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="books.html" data-path="~/books">
+
+  <div class="window">
+
+    <header>
+      <a class="site-logo" href="index.html"><span class="lb">&lt;</span>George Han<span class="lb">/&gt;</span></a>
+      <nav id="nav"></nav>
+    </header>
+
+    <main>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/books</span><span class="p-sym">$</span>
+        <span class="p-cmd">cat README.md</span>
+      </div>
+
+      <div class="output">
+        <p>
+          I read widely — science, philosophy, history, fiction — with a bias toward books
+          that change how I think rather than confirm what I already believe.
+        </p>
+      </div>
+
+      <!-- Currently reading -->
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/books</span><span class="p-sym">$</span>
+        <span class="p-cmd">cat currently-reading.txt</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">Currently Reading</div>
+
+        <div class="book-item">
+          <img class="book-cover"
+            src="img/books/alignment-problem.jpg"
+            alt="The Alignment Problem cover"
+            onerror="this.style.background='var(--border2)';this.removeAttribute('src')" />
+          <div class="book-info">
+            <div class="book-title">The Alignment Problem</div>
+            <div class="book-author">Brian Christian · 2020</div>
+            <span class="book-status">reading now</span>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <img class="book-cover"
+            src="img/books/outlive.jpg"
+            alt="Outlive cover"
+            onerror="this.style.background='var(--border2)';this.removeAttribute('src')" />
+          <div class="book-info">
+            <div class="book-title">Outlive: The Science and Art of Longevity</div>
+            <div class="book-author">Peter Attia &amp; Bill Gifford · 2023</div>
+            <span class="book-status">reading now</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- All-time favourites -->
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/books</span><span class="p-sym">$</span>
+        <span class="p-cmd">grep -r "★★★★★" ./library/ | sort</span>
+      </div>
+
+      <div class="output">
+        <div class="sh">All-time Favourites</div>
+
+        <div class="book-item">
+          <img class="book-cover"
+            src="img/books/nexus.jpg"
+            alt="Nexus cover"
+            onerror="this.style.background='var(--border2)';this.removeAttribute('src')" />
+          <div class="book-info">
+            <div class="book-title">Nexus: A Brief History of Information Networks from the Stone Age to AI</div>
+            <div class="book-author">Yuval Noah Harari · 2024</div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <img class="book-cover"
+            src="img/books/woman-plan.jpg"
+            alt="A Woman Makes a Plan cover"
+            onerror="this.style.background='var(--border2)';this.removeAttribute('src')" />
+          <div class="book-info">
+            <div class="book-title">A Woman Makes a Plan: Advice for a Lifetime of Adventure, Beauty, and Success</div>
+            <div class="book-author">Maye Musk · 2019</div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <img class="book-cover"
+            src="img/books/courage-disliked.jpg"
+            alt="The Courage to Be Disliked cover"
+            onerror="this.style.background='var(--border2)';this.removeAttribute('src')" />
+          <div class="book-info">
+            <div class="book-title">The Courage to Be Disliked</div>
+            <div class="book-author">Ichiro Kishimi &amp; Fumitake Koga · 2013</div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <img class="book-cover"
+            src="img/books/road-serfdom.jpg"
+            alt="The Road to Serfdom cover"
+            onerror="this.style.background='var(--border2)';this.removeAttribute('src')" />
+          <div class="book-info">
+            <div class="book-title">The Road to Serfdom</div>
+            <div class="book-author">F. A. Hayek · 1944</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="prompt">
+        <span class="p-user">george</span><span class="p-at">@</span><span class="p-host">han</span><span class="p-sep">:</span><span class="p-path">~/books</span><span class="p-sym">$</span>
+        <span class="cursor"></span>
+      </div>
+
+    </main>
+
+    <footer>
+      <span>George Han · Cambridge</span>
+      <span id="clock"></span>
+    </footer>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
