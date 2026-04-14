@@ -8,7 +8,9 @@
       "Bash(python scripts/office/unpack.py blog/drafts/blog_1.docx blog_1_unpacked/)",
       "Bash(ls \"C:\\\\Users\\\\molec\\\\OneDrive\\\\george_website\\\\blog\"\" 2>/dev/null && ls \"C:UsersmolecOneDrivegeorge_websiteblogimg\"\")",
       "Bash(dir \"C:\\\\Users\\\\molec\\\\OneDrive\\\\george_website\\\\blog\")",
-      "Bash(dir \"C:\\\\Users\\\\molec\\\\OneDrive\\\\george_website\\\\blog\\\\img\")"
+      "Bash(dir \"C:\\\\Users\\\\molec\\\\OneDrive\\\\george_website\\\\blog\\\\img\")",
+      "WebFetch(domain:scholar.google.com)",
+      "Bash(python -c ':*)"
     ]
   }
 }
