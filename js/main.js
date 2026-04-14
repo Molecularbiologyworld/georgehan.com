@@ -27,9 +27,11 @@ const PAGES = [
 function buildNav(activePage) {
   const nav = document.getElementById('nav');
   if (!nav) return;
+  const depth = window.location.pathname.replace(/\/$/, '').split('/').filter(Boolean).length - 1;
+  const prefix = depth > 0 ? '../'.repeat(depth) : '';
   PAGES.forEach(p => {
     const a = document.createElement('a');
-    a.href = p.file;
+    a.href = prefix + p.file;
     a.textContent = p.name;
     if (p.file === activePage) a.classList.add('active');
     nav.appendChild(a);
